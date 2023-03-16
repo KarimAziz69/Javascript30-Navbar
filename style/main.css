@@ -1,9 +1,35 @@
 @media (max-width: 576px) {
     .rates {
+        font-size: 16px!important;
+    }
+    .companies {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px!important;
+        margin: 0px 0;
+        width: fit-content;
+    }
+    .companies img {
+        width: 140px!important;
+    }
+    
+ }
+@media (min-width: 576px) and (max-width: 767px) {
+    .rates {
         font-size: 20px!important;
     }
-
- }
+    .companies {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px!important;
+        margin: 0px 0;
+    }
+    .companies img {
+        width: 100%!important;
+    }
+    
+  }
+  
 
 
 
@@ -47,11 +73,17 @@ body {
 }
 
 .phoneMenu {
-    width: 500px;
+    width: 320px;
     height: 390px;
     background-color: #fefefe;
     padding: 14px!important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
 }
+
 .animationOpen {
     animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -99,6 +131,10 @@ font-size: 50px;
 .rates img {
     margin-left: 5px;
     width: 24px;
+}
+
+.companies img {
+    width: 165px;
 }
 
 @keyframes scale-in-center {
